@@ -2,5 +2,5 @@
 
 	infra_debug(true);
 	echo '<pre>';
-	$conf = infra_config();
+	$conf = Infra::config();
 	print_r($conf);
