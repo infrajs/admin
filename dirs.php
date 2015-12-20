@@ -12,5 +12,5 @@ if (!is_file('vendor/autoload.php')) {
 Access::test(true);
 
 echo '<pre>';
-$dirs = Infra::dirs();
+$dirs = Config::get('path');
 print_r($dirs);

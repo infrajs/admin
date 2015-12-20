@@ -1,14 +1,17 @@
 <?php
 namespace infrajs\access;
 use infrajs\ans\Ans;
-use infrajs\infra\Infra;
+use infrajs\infra\Config;
 use infrajs\template\Template;
 use infrajs\path\Path;
+use infrajs\event\Event;
 
 if(!is_file('vendor/autoload.php')) {
 	chdir('../../../');
 	require_once('vendor/autoload.php');
 }
+
+
 Path::init();
 
 if (isset($_REQUEST['json'])) {
@@ -24,7 +27,7 @@ if (isset($_REQUEST['json'])) {
 
 <?php
 	if (isset($_REQUEST['login'])) {
-		Infra::req('template');
+		Config::get('template');
 		Access::admin(true);
 		echo Template::parse('-admin/index.tpl');
 		?>
@@ -49,8 +52,9 @@ if (isset($_REQUEST['json'])) {
 
 	} else {
 		$r = Access::admin();
+
 		if ($r) {
-			Infra::req('template');
+			Config::get('template');
 			echo Template::parse('-admin/index.tpl');
 			?>
 		<div style="padding:50px 100px">

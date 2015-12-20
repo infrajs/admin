@@ -9,10 +9,10 @@ if (!is_file('vendor/autoload.php')) {
 	chdir('../../../../');
 	require_once('vendor/autoload.php');
 }
-Infra::req();
+Config::get();
 Access::test(true);
 Path::fullrmdir('!');
-Infra::req();
+Config::get();
 Event::fire('oninstall');
 $ans=array();
 Ans::ret($ans, 'Cache cleared, install completed');
