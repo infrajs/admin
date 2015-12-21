@@ -1,5 +1,6 @@
 <?php
 namespace infrajs\infra;
+
 use infrajs\access\Access;
 use infrajs\event\Event;
 use infrajs\ans\Ans;
@@ -9,11 +10,11 @@ if (!is_file('vendor/autoload.php')) {
 	chdir('../../../../');
 	require_once('vendor/autoload.php');
 }
-Config::get();
-Access::test(true);
-Path::fullrmdir('!');
-Config::get();
-Event::fire('oninstall');
+
+
+Config::init();
+Path::fullrmdir('!', true);
+
 $ans=array();
-Ans::ret($ans, 'Cache cleared, install completed');
+Ans::ret($ans, 'Cache cleared');
  
