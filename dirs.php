@@ -1,7 +1,8 @@
 <?php
-namespace infrajs\infra;
+
 use infrajs\access\Access;
 use infrajs\event\Event;
+use infrajs\config\Config;
 use infrajs\ans\Ans;
 
 if (!is_file('vendor/autoload.php')) {

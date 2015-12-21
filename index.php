@@ -1,7 +1,7 @@
 <?php
 namespace infrajs\access;
 use infrajs\ans\Ans;
-use infrajs\infra\Config;
+use infrajs\config\Config;
 use infrajs\template\Template;
 use infrajs\path\Path;
 use infrajs\event\Event;
