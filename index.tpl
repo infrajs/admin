@@ -32,14 +32,14 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li role="presentation"><a href="?-tester/">tests</a></li>
-					<li role="presentation"><a href="?-admin/">admin</a></li>
-					<li role="presentation"><a href="?-imager/admin.php">imager</a></li>
-					<li role="presentation"><a href="?-admin/dirs.php">dirs</a></li>
-					<li role="presentation"><a href="?-admin/config.php">config</a></li>
-					<li role="presentation"><a href="?-session/">session</a></li>
-					<li role="presentation"><a href="?-admin/flush.php">clear</a></li>
-					<li role="presentation"><a href="?-access/">access</a></li>
+					<li role="presentation"><a href="/-tester/">tests</a></li>
+					<li role="presentation"><a href="/-admin/">admin</a></li>
+					<li role="presentation"><a href="/-imager/admin.php">imager</a></li>
+					<li role="presentation"><a href="/-admin/dirs.php">dirs</a></li>
+					<li role="presentation"><a href="/-admin/config.php">config</a></li>
+					<li role="presentation"><a href="/-session/">session</a></li>
+					<li role="presentation"><a href="/-admin/flush.php">clear</a></li>
+					<li role="presentation"><a href="/-access/">access</a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
