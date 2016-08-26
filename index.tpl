@@ -35,7 +35,6 @@
 					<li role="presentation"><a href="/-tester/">tests</a></li>
 					<li role="presentation"><a href="/-admin/">admin</a></li>
 					<li role="presentation"><a href="/-imager/admin.php">imager</a></li>
-					<li role="presentation"><a href="/-admin/dirs.php">dirs</a></li>
 					<li role="presentation"><a href="/-admin/config.php">config</a></li>
 					<li role="presentation"><a href="/-session/">session</a></li>
 					<li role="presentation"><a href="/-admin/flush.php">clear</a></li>

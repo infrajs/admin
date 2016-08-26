@@ -1,22 +1,23 @@
 <?php
-
-
 use infrajs\access\Access;
-use infrajs\event\Event;
 use infrajs\config\Config;
 use infrajs\ans\Ans;
+use infrajs\mem\Mem;
 use infrajs\path\Path;
+use infrajs\router\Router;
 
 if (!is_file('vendor/autoload.php')) {
-	chdir('../../../../');
+	chdir('../../../');
 	require_once('vendor/autoload.php');
+	Router::init();
 }
 
-Access::debug(true);
+Access::test(true);
 
-Config::init();
+Mem::flush();
 Path::fullrmdir('!', true);
 
-$ans=array();
-Ans::ret($ans, 'Cache cleared');
+
+$ans = array();
+Ans::ret($ans, 'Cache cleared Mem::flush, Path::fulrmdir');
  
