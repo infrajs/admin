@@ -1,7 +1,6 @@
 {
 	"name": "infrajs/admin",
 	"description": "Admin interface",
-	"license": "GPL3",
 	"require": {
 		"infrajs/template":"~1",
 		"infrajs/access":"~1",
